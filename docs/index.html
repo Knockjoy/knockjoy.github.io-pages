@@ -5,25 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
-    <script src="js.js"></script>
-    <style>
-        .wf-roundedmplus1c {
-            font-family: "M PLUS Rounded 1c";
-        }
-    </style>
-    <link rel="stylesheet" href="css.css">
     <title>Document</title>
+    <style>
+        /* *{display: none;} */
+    </style>
 </head>
 
 <body>
-    <div id="screen">
-        <div class="samp1"></div>
-        <div class="fream_title">
-            <span class="title wf-roundedmplus1c">title</span>
-        </div>
-        <div class="samp1"><a class="btn btn-border"></div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="vue-hello.js"></script>
+    <div id="app">
+        <div>{{ message }}</div>
+        <hello></hello>
+        <hello></hello>
+        <hello></hello>
+        <hello></hello>
+        <hello></hello>
     </div>
+    
+    <script>
+        var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
+    </script>
 </body>
 
 </html>
