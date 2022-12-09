@@ -7,7 +7,7 @@ function chage_data_to_html(id,path){
     chage_data(id,get_html(path))
 }
 
-function get_html(path) {
+acync function get_html(path) {
     const result = await fetch(path, {
         method: "GET"
     }).then(function (response) {
