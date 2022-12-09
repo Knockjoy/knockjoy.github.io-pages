@@ -1,6 +1,6 @@
 function chage_data(id, data) {
     var element = document.getElementById(id)
-    element.innerHTML = "data"
+    element.innerHTML = data
 }
 
 function chage_data_to_html(id,path){
