@@ -1,12 +1,13 @@
 var datas;
 
 function chage_data(id, data) {
-    var element = document.getElementById(id)
-    element.innerHTML = data
+    var element = document.getElementById(id);
+    element.innerHTML = data;
 }
 
 async function chage_data_to_html(id,path){
-    chage_data(id,await get_html(path))
+    await get_html(path);
+    chage_data(id,datas);
 }
 async function get_html(path) {
     const result =await fetch(path, {
@@ -14,13 +15,12 @@ async function get_html(path) {
     }).then(function (response) {
         return response.text();
     }).then(function (data) {
-        const a = new DOMParser().parseFromString(data, "text/html")
+        const a = new DOMParser().parseFromString(data, "text/html");
         datas=a.body.innerHTML;
-        return datas
     });}
 
 async function sample2(){
-    chage_data("screen", await sample1())
+    chage_data("screen", await sample1());
 }
 
 // var datas;
