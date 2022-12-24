@@ -1,0 +1,35 @@
+google forms
+|
+|_...
+|
+|_div.lrKTG.da8bmd //タイトルと質問を含んだ大きなまとまり
+ |
+ |_div.Dq4amc　//タイトル用クラスとdiv
+ |  |_div.m7w29c.O8VmIc.tIvQIf
+ |      |_...
+ |      |_div.N0gd6
+ |           |_div.ahS2Le
+ |           |   |_div.F9yp7e.ikZYwf.LgNcQe (content)//タイトル
+ |           |_div.tV8Uvb
+ |               |_"合計点
+ |               |_span.nkOYNd.RVEQke (content)//点数
+ |_...
+_____________________________________________________________
+../div.g53bl
+   |
+   |_div.zS667
+   |  |_div.foqfDc.gdyQ3c
+   |     |_...
+   |     |_div.下のいずれかのクラス
+   |
+   |_div.cTDvob.D1wxyf.RjsPE
+       |_span.M7eMe (content)//質問文
+
+.NpcyEe-n5T17d-Bz112c-JbbQac-oq6NAc-XkWAb //不正解用クラス
+	left:0;
+	top:-4732px //縦長の画像をずらしてバツの位置を表示
+
+.NpcyEe-n5T17d-Bz112c-g6cJHd-nllRtd-XkWAb //正解用クラス
+	left:0;
+	top:-260px //縦長の画像をずらしてマルの位置を表示 
+________________________________________________________________

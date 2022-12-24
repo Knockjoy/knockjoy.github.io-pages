@@ -1,0 +1,35 @@
+<div class="wf-roundedmplus1c">
+    <div class="samp1 home_per">
+        <span class="home" onclick="home()">&lt;home</span>
+    </div>
+    <!-- title -->
+    <div class="fream_title">
+        <span class="title title_border">import</span>
+        <!-- <div class="subtitle"><span>始めるにはcsvファイルまたは<br>spreadsheetのid またはurlを入力してください</span></div> -->
+    </div>
+
+    <div class="samp1"></div>
+    <!-- content -->
+    <div class="subtitle_fream">
+        <span class="subtitle2">CSV ファイル,xlsxファイルでインポートする</span>
+        <div>
+            <label class="file">
+                <input class="radio" type="file" id="import_file" accept=".csv,.xlsx,.xls">
+                <div class="button02"><span>ファイルを選択</span></div>
+                <label id="file_value">未選択</label>
+            </label>
+        </div>
+        <div class="samp1"></div>
+        <!-- XSSに注意 -->
+        <span class="subtitle2">Google SheetsのID,URLでインポートする</span>
+        <div><input type="text" id="sheets" placeholder="ID,URLを入力"></div>
+        <div class="samp1"></div>
+        <div class="next">
+        <div class="button02">
+            <span onclick="next()">次へ</span>
+        </div>
+        <div class="error" id="error"></div>
+    </div>
+    </div>
+
+</div>

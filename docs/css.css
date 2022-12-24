@@ -1,10 +1,58 @@
+:root {
+    --text_color:#331200;
+    --backbround_color:#eedcb3;
+    --border_bottom_color:rgb(78, 35, 6);
+}
+
+
+html,
 body {
-    background: #eedcb3;
+    background: var(--backbround_color);
+    /* background-image: url("background.jpg");
+background-size: 100%; */
+}
+
+.setting_per {
+    position: relative;
+}
+
+.setting_fream {
+    margin-top: 10px;
+    margin-left: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.setting {
+    position: absolute;
+    background-image: url("setting.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-left: 0.5em;
+}
+
+.setting_span {
+    color: #331200;
+    font-size: 1.5em;
+}
+
+.setting_div {
+    position: absolute;
+    margin-top: 30px;
 }
 
 .title {
-    font-size: 3em;
-    color: #331200;
+    font-size: 5vh;
+    color: var(--text_color);
+}
+
+.title_border {
+    border-bottom: 2px dotted var(--border_bottom_color);
 }
 
 .fream_title {
@@ -12,15 +60,38 @@ body {
     width: max-content;
     text-align: center;
     margin: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
-iframe{
+.home_per {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.home {
+    color: var(--text_color);
+    font-size: 1.5em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+iframe {
     width: 100vh;
     height: 100vh;
 }
-iframe::-webkit-scrollbar{
+
+iframe::-webkit-scrollbar {
     display: none;
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -30,10 +101,13 @@ iframe::-webkit-scrollbar{
     height: 15vh;
 }
 
-.button02 a {
+#start {
     display: flex;
+}
+
+.button02 span {
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     margin: 0 auto;
     padding: 1em 2em;
     width: 300px;
@@ -42,9 +116,14 @@ iframe::-webkit-scrollbar{
     font-weight: 700;
     background-color: #cccccc;
     border-radius: 50vh;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
-.button02 a::after {
+.button02 span ::after {
     content: '';
     width: 5px;
     height: 5px;
@@ -70,6 +149,134 @@ iframe::-webkit-scrollbar{
 }
 
 .p {
-    margin: 10px 0 0 0;    
+    margin: 10px 0 0 0;
 }
-.loading{display: none;}
+
+.loading {
+    display: none;
+}
+
+.radio {
+    display: none;
+}
+
+.radio_frame label {
+    position: relative;
+}
+
+
+.option_screen {
+    display: flex;
+    height: auto;
+    justify-content: center
+}
+
+.samp2 {
+    width: 15%;
+}
+
+.radio_button {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+
+.radio_button .inner1 {
+    margin: 4px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #040404;
+}
+
+.radio_button .inner2 {
+    width: 9px;
+    height: 9px;
+    background: #2e3175;
+    border-radius: 50%;
+    margin: 3px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.radio_label input[type="radio"]:checked+.radio_button .inner1 .inner2 {
+    opacity: 1;
+}
+
+.radio_label {
+    position: absolute;
+}
+
+.radio_span {
+    padding-left: 24px;
+    ;
+}
+
+.subtitle1 {
+    top: 2em;
+    font-size: 1.5em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    color: var(--text_color);
+}
+
+.subtitle_fream {
+    padding-left: 10%;
+    position: relative;
+}
+
+.subtitle2 {
+    font-size: 1.5em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.file {
+    padding-top: 2%;
+    padding-left: 2%;
+    display: flex;
+    position: relative;
+}
+
+#file_value{
+    font-size: 1.5em;
+    position: absolute;
+    padding:0em 2em;
+    margin-left: 160px;
+    margin-top: -10px;
+}
+
+input[type="text"] {
+    width: 30%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #cccccc;
+    box-sizing: border-box;
+
+}
+
+input[type="file"]:focus {
+    border: 2px solid #bbbbbb;
+    z-index: 10;
+    outline: 0;
+}
+.next{
+    display: flex;
+    position: relative;
+}
+.next .error{
+    font-size: 1.5em;
+    position: absolute;
+    padding:0em 2em;
+    margin-left: 80px;
+    margin-top: -10px;
+}

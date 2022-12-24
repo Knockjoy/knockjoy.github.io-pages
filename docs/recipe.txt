@@ -1,0 +1,12 @@
+//ホームに戻る文字
+<div class="samp1 home_per">
+    <span class="home" onclick="home()">&lt;home</span>
+</div>
+//タイトル用文字
+<div class="fream_title">
+    <span class="title title_border">content</span>
+</div>
+//ボタン
+<div class="button02">
+    <span onclick="function()">content</span>
+</div>
